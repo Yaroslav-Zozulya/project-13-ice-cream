@@ -1,16 +1,14 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--primery-title-color);
-    background-color: var(--first-background-color);
+  font-family: 'DM Sans', sans-serif;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 p,
@@ -20,24 +18,24 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
