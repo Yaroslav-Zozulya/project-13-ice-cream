@@ -1,0 +1,40 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+.advantages {
+  background-color: var(--background-color);
+}
+
+.advantages__icons {
+  margin-bottom: 10px;
+  fill: var(--light-brand-color);
+}
+
+.advantages__label {
+  margin-bottom: 15px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(41 / 36);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--brand-color);
+}
+.advantages__item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+.advantages__content {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  max-width: 230px;
+
+  color: var(--dark-text-color);
+}
