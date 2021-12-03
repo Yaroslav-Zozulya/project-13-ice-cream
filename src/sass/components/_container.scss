@@ -2,4 +2,17 @@
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-right: 34px;
+    padding-left: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-right: 115px;
+    padding-left: 115px;
+  }
 }
