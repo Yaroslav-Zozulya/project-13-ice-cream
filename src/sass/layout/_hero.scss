@@ -1,0 +1,23 @@
+.hero {
+  height: 446px;
+  @media screen and (min-width: 768px) {
+    height: 312px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 579px;
+  }
+  background-color: var(--pink-background-color);
+}
+.hero-title {
+  padding-top: 137px;
+  font-size: 48px;
+}
+.hero-pretitle {
+  color: var(--white-text-color);
+  font-size: 26px;
+}
+.hero-btn-list {
+  display: flex;
+}
+.hero-btn {
+}
