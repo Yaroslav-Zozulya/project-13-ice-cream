@@ -131,4 +131,87 @@ img {
 .btn_light:hover, .btn_light:focus {
   background-color: var(--light-btn-hover);
 }
+
+.footer {
+  min-width: 320px;
+  background-color: var(--background-color);
+}
+
+.footer__title {
+  margin-bottom: 43px;
+}
+
+.footer__title .pre-title {
+  margin-bottom: 17px;
+}
+
+.footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 46px;
+}
+
+.footer__icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--icon-color);
+}
+
+.footer__icon:hover, .footer__icon:focus {
+  fill: var(--brand-color);
+}
+
+.footer__link-facebook,
+.footer__link-telegram {
+  margin-left: 28px;
+}
+
+.footer__kontakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 43px;
+}
+
+.footer__tel {
+  margin-left: auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.86;
+  color: var(--brand-color);
+}
+
+.footer__tel-feature {
+  color: var(--dark-text-color);
+}
+
+.container .footer__copyright {
+  padding: 0;
+}
+
+.footer__copyright {
+  height: 89px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid var(--separating-line-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: var(--light-text-color);
+}
 /*# sourceMappingURL=main.css.map */
