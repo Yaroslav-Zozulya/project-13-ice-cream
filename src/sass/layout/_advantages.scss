@@ -3,9 +3,11 @@
   padding-bottom: 97px;
 }
 
-.advantages__icons {
-  margin-bottom: 10px;
-  fill: var(--light-brand-color);
+.advantages__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__label {
@@ -19,11 +21,44 @@
 
   color: var(--brand-color);
 }
-.advantages__item {
-  &:not(:last-child) {
-    margin-bottom: 40px;
-  }
+
+.advantages-svg-one::before {
+  content: '';
+  margin-bottom: 10px;
+  display: block;
+
+  width: 50px;
+  height: 50px;
+  background-image: url(.././images/gallery/milk-ice1.svg);
+  background-repeat: no-repeat;
+
+  background-size: auto 50px;
 }
+.advantages-svg-two::before {
+  content: '';
+  margin-bottom: 10px;
+  display: block;
+
+  width: 50px;
+  height: 50px;
+  background-image: url(.././images/gallery/milk-ice2.svg);
+  background-repeat: no-repeat;
+
+  background-size: auto 50px;
+}
+.advantages-svg-three::before {
+  content: '';
+  margin-bottom: 10px;
+  display: block;
+
+  width: 50px;
+  height: 50px;
+  background-image: url(.././images/gallery/milk-ice3.svg);
+  background-repeat: no-repeat;
+
+  background-size: auto 50px;
+}
+
 .advantages__content {
   font-weight: 700;
   font-size: 12px;
