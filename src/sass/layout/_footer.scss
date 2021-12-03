@@ -2,15 +2,25 @@
   background-color: var(--background-color);
 }
 
+.footer__container {
+  padding-bottom: 43px;
+}
+
 .footer__title {
   margin-bottom: 43px;
 }
 
 .footer__title .pre-title {
+  width: 232px;
   margin-bottom: 17px;
 }
 
-.footer__link {
+.footer__title .title {
+  display: inline-block;
+  width: 200px;
+}
+
+.footer__links {
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 46px;
@@ -21,10 +31,17 @@
   height: 32px;
   fill: var(--icon-color);
 
-  &:hover,
-  &:focus {
-    fill: var(--brand-color);
-  }
+  transition: fill 250ms linear;
+}
+
+.footer__link {
+  display: block;
+  height: 32px;
+}
+
+.footer__link:hover .footer__icon,
+.footer__link:focus .footer__icon {
+  fill: var(--brand-color);
 }
 
 .footer__link-facebook,
@@ -32,9 +49,8 @@
   margin-left: 28px;
 }
 
-.footer__kontakt {
+.footer__contact {
   display: flex;
-  margin-bottom: 43px;
 }
 
 .footer__tel {
@@ -51,15 +67,16 @@
   color: var(--dark-text-color);
 }
 
-.container .footer__copyright {
-  padding: 0;
-}
-.footer__copyright {
-  height: 89px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer__copyright-box {
   border-top: 1px solid var(--separating-line-color);
+}
+
+.footer__copyright {
+  width: 145px;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: bold;
   font-size: 14px;
