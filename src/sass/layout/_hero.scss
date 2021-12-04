@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  position: relative;
   justify-content: space-between;
   height: 502px;
   background-color: var(--pink-background-color);
@@ -88,11 +89,24 @@
     padding-right: 20px;
   }
 }
+.hero-describe {
+  display: none;
+  width: 114px;
+  margin-left: 120px;
+  margin-top: 66px;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    margin-left: 295px;
+    margin-top: 112px;
+  }
+}
 
 .hero-right-part {
   display: none;
   padding-top: 94px;
-  // padding-right: 10px;
   font-family: Titan One;
   font-size: 28px;
   line-height: 1.14;
@@ -146,5 +160,22 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.29;
+  }
+}
+.hero-milk-pic {
+  position: absolute;
+  left: 34px;
+  top: 245px;
+  @media screen and (min-width: 1200px) {
+    left: 77px;
+    top: 429px;
+  }
+}
+.hero-girl-pic {
+  position: absolute;
+  left: 566px;
+  bottom: 0;
+  @media screen and (min-width: 1200px) {
+    left: 878px;
   }
 }
