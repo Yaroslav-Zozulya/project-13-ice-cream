@@ -1,12 +1,40 @@
 .hero {
-  height: 446px;
-  @media screen and (min-width: 768px) {
-    height: 312px;
-  }
-  @media screen and (min-width: 768px) {
-    height: 579px;
-  }
+  height: 502px;
   background-color: var(--pink-background-color);
+  background-image: url(/images/hero-icecream-mobile.png),
+    radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/hero-icecream-mobile@2x.png),
+      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+    background-size: 171px 410px, auto;
+  }
+  background-position: 117px bottom, 36px 83px;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    height: 399px;
+    background-image: url(/images/hero-icecream-tablet.png),
+      radial-gradient(circle at 162px 162px, var(--light-brand-color) 162px, transparent 162px);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/hero-icecream-tablet@2x.png),
+        radial-gradient(circle at 162px 162px, var(--light-brand-color) 162px, transparent 162px);
+      background-size: 143px 336px, auto;
+    }
+    background-position: 378px bottom, 307px 31px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 665px;
+    background-image: url(/images/hero-icecream-desktop.png),
+      radial-gradient(circle at 269px 269px, var(--light-brand-color) 269px, transparent 269px);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/hero-icecream-desktop@2x.png),
+        radial-gradient(circle at 269px 269px, var(--light-brand-color) 269px, transparent 269px);
+      background-size: 236px 557px, auto;
+    }
+    background-position: 594px bottom, 475px 52px;
+  }
 }
 .hero-title {
   padding-top: 137px;
