@@ -1,9 +1,12 @@
+.hero-section {
+  background-color: var(--pink-background-color);
+}
+
 .hero {
   display: flex;
   position: relative;
   justify-content: space-between;
   height: 502px;
-  background-color: var(--pink-background-color);
   background-image: url(/images/hero-icecream-mobile.png),
     radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
 
@@ -27,7 +30,7 @@
     background-position: 378px bottom, 307px 31px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 665px;
     background-image: url(/images/hero-icecream-desktop.png),
       radial-gradient(circle at 269px 269px, var(--light-brand-color) 269px, transparent 269px);
@@ -41,24 +44,30 @@
 }
 .hero-title {
   padding-top: 193px;
-  font-size: 48px;
+  font-size: 26px;
+  color: var(--white-text-color);
+
   @media screen and (min-width: 768px) {
-    font-size: 34px;
+    font-size: 22px;
     padding-top: 102px;
   }
-  @media screen and (min-width: 1200px) {
-    font-size: 58px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
     padding-top: 171px;
   }
 }
-.hero-pretitle {
-  color: var(--white-text-color);
-  font-size: 26px;
+.hero-title-accent {
+  font-size: 48px;
+  color: var(--brand-color);
+  line-height: 0.97;
   @media screen and (min-width: 768px) {
-    font-size: 22px;
+    font-size: 34px;
+    line-height: 0.91;
   }
-  @media screen and (min-width: 1200px) {
-    font-size: 38px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
   }
 }
 .hero-btn-list {
@@ -67,7 +76,8 @@
 .hero-btn-item {
   &:first-child {
     margin-right: 8px;
-    @media screen and (min-width: 1200px) {
+
+    @media screen and (min-width: 1280px) {
       margin-right: 15px;
     }
   }
@@ -80,7 +90,8 @@
   font-size: 8px;
   padding-left: 13px;
   padding-right: 13px;
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 1280px) {
     height: 40px;
     line-height: 40px;
     margin-top: 25px;
@@ -97,10 +108,26 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 1280px) {
     width: 200px;
-    margin-left: 295px;
+    margin-left: 180px;
     margin-top: 112px;
+  }
+}
+.hero-round-btn {
+  display: flex;
+  margin-top: 7px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--white-background-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: var(--brand-color);
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
   }
 }
 
@@ -117,7 +144,8 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 1280px) {
     padding-top: 156px;
     font-size: 46px;
   }
@@ -127,7 +155,8 @@
   z-index: 1;
   &:first-child {
     margin-bottom: 15px;
-    @media screen and (min-width: 1200px) {
+
+    @media screen and (min-width: 1280px) {
       margin-bottom: 18px;
     }
   }
@@ -142,7 +171,8 @@
     position: absolute;
     right: -10px;
     top: -2px;
-    @media screen and (min-width: 1200px) {
+
+    @media screen and (min-width: 1280px) {
       height: 30px;
       width: 30px;
       right: -16px;
@@ -157,25 +187,36 @@
   font-size: 8px;
   line-height: 1.25;
   color: var(--white-text-color);
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
-    line-height: 1.29;
+    line-height: 1.4;
   }
 }
 .hero-milk-pic {
+  display: none;
   position: absolute;
   left: 34px;
   top: 245px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1280px) {
     left: 77px;
     top: 429px;
   }
 }
 .hero-girl-pic {
+  display: none;
   position: absolute;
   left: 566px;
   bottom: 0;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1280px) {
     left: 878px;
   }
 }
