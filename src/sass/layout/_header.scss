@@ -1,6 +1,7 @@
 /* уставливаем фон хедера и верхний отступ падингом*/
 .header {
   position: fixed;
+  z-index: 10;
   width: 100vw;
   padding-top: 6px;
   @media screen and(min-width:768px) {
@@ -55,6 +56,7 @@
 }
 
 .menu.active {
+  z-index: 15;
   transform: translateX(-100%);
 }
 
