@@ -1,0 +1,7 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-rightarrow" viewBox="0 0 32 32">
+<path d="M14.5 3.855c-1.479 1.475-1.479 3.876 0 5.355l3.003 3.003h-13.716c-2.090 0-3.787 1.695-3.787 3.787 0 2.090 1.697 3.787 3.787 3.787h13.716l-3.003 3.003c-1.479 1.475-1.479 3.876 0 5.355 0.74 0.74 1.708 1.11 2.677 1.11s1.937-0.369 2.677-1.11l12.145-12.145-12.145-12.145c-1.479-1.479-3.876-1.479-5.355 0z"></path>
+</symbol>
+</defs>
+</svg>
