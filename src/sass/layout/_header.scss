@@ -49,7 +49,7 @@
   transition: transform 250ms linear;
 
   @media screen and(min-width:768px) {
-    height: 100vw;
+    height: 100vh;
     width: 33vw;
   }
 }
@@ -67,6 +67,7 @@
 
 /* сетка мобильного меню + ховер и фокус */
 .menu__item {
+  cursor: pointer;
   border-bottom: 1px solid #e18298;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -88,11 +89,14 @@
 
 /* цвет и шрифт пунктов мобильного меню */
 .menu__link {
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: var(--white-text-color);
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   line-height: 1.29;
   font-weight: bold;
+  transition: color 250ms linear;
 }
 
 /* кнопка заказа в мобильной версии */
@@ -157,8 +161,6 @@
 }
 
 .header__menu-item {
-  padding-top: 12px;
-  padding-bottom: 12px;
   cursor: pointer;
   &:hover .header__menu-link,
   &:focus .header__menu-link {
@@ -171,6 +173,8 @@
 }
 
 .header__menu-link {
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: var(--white-text-color);
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
