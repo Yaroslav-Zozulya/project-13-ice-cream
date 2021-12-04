@@ -44,26 +44,30 @@
 }
 .hero-title {
   padding-top: 193px;
-  font-size: 48px;
+  font-size: 26px;
+  color: var(--white-text-color);
+
   @media screen and (min-width: 768px) {
-    font-size: 34px;
+    font-size: 22px;
     padding-top: 102px;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 58px;
+    font-size: 38px;
     padding-top: 171px;
   }
 }
-.hero-pretitle {
-  color: var(--white-text-color);
-  font-size: 26px;
+.hero-title-accent {
+  font-size: 48px;
+  color: var(--brand-color);
+  line-height: 0.97;
   @media screen and (min-width: 768px) {
-    font-size: 22px;
+    font-size: 34px;
+    line-height: 0.91;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 38px;
+    font-size: 58px;
   }
 }
 .hero-btn-list {
@@ -186,7 +190,7 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 14px;
-    line-height: 1.29;
+    line-height: 1.4;
   }
 }
 .hero-milk-pic {
