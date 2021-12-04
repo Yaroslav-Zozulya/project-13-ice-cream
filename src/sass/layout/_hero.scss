@@ -1,4 +1,3 @@
-
 .hero-section {
   background-color: var(--pink-background-color);
 }
@@ -31,9 +30,7 @@
     background-position: 378px bottom, 307px 31px;
   }
 
-
   @media screen and (min-width: 1280px) {
-
     height: 665px;
     background-image: url(/images/hero-icecream-desktop.png),
       radial-gradient(circle at 269px 269px, var(--light-brand-color) 269px, transparent 269px);
@@ -54,7 +51,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-
     font-size: 58px;
     padding-top: 171px;
   }
@@ -67,7 +63,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-
     font-size: 38px;
   }
 }
@@ -79,7 +74,6 @@
     margin-right: 8px;
 
     @media screen and (min-width: 1280px) {
-
       margin-right: 15px;
     }
   }
@@ -94,7 +88,6 @@
   padding-right: 13px;
 
   @media screen and (min-width: 1280px) {
-
     height: 40px;
     line-height: 40px;
     margin-top: 25px;
@@ -134,7 +127,6 @@
   }
 }
 
-
 .hero-right-part {
   display: none;
   padding-top: 94px;
@@ -150,7 +142,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-
     padding-top: 156px;
     font-size: 46px;
   }
@@ -162,7 +153,6 @@
     margin-bottom: 15px;
 
     @media screen and (min-width: 1280px) {
-
       margin-bottom: 18px;
     }
   }
@@ -179,7 +169,6 @@
     top: -2px;
 
     @media screen and (min-width: 1280px) {
-
       height: 30px;
       width: 30px;
       right: -16px;
@@ -196,29 +185,34 @@
   color: var(--white-text-color);
 
   @media screen and (min-width: 1280px) {
-
     font-size: 14px;
     line-height: 1.29;
   }
 }
 .hero-milk-pic {
+  display: none;
   position: absolute;
   left: 34px;
   top: 245px;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 
   @media screen and (min-width: 1280px) {
-
     left: 77px;
     top: 429px;
   }
 }
 .hero-girl-pic {
+  display: none;
   position: absolute;
   left: 566px;
   bottom: 0;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 
   @media screen and (min-width: 1280px) {
-
     left: 878px;
   }
 }
