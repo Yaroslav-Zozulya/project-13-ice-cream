@@ -1,0 +1,86 @@
+.footer {
+  background-color: var(--background-color);
+}
+
+.footer__container {
+  padding-bottom: 43px;
+}
+
+.footer__title {
+  margin-bottom: 43px;
+}
+
+.footer__title .pre-title {
+  width: 232px;
+  margin-bottom: 17px;
+}
+
+.footer__title .title {
+  display: inline-block;
+  width: 200px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 46px;
+}
+
+.footer__icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--icon-color);
+
+  transition: fill 250ms linear;
+}
+
+.footer__link {
+  display: block;
+  height: 32px;
+}
+
+.footer__link:hover .footer__icon,
+.footer__link:focus .footer__icon {
+  fill: var(--brand-color);
+}
+
+.footer__link-facebook,
+.footer__link-telegram {
+  margin-left: 28px;
+}
+
+.footer__contact {
+  display: flex;
+}
+
+.footer__tel {
+  margin-left: auto;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.86;
+
+  color: var(--brand-color);
+}
+
+.footer__tel-feature {
+  color: var(--dark-text-color);
+}
+
+.footer__copyright-box {
+  border-top: 1px solid var(--separating-line-color);
+}
+
+.footer__copyright {
+  width: 145px;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: var(--light-text-color);
+}
