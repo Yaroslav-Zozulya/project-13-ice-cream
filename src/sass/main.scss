@@ -1,0 +1,30 @@
+//UTILS
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/is-hidden';
+
+//BASE
+@import './base/reset';
+
+//COMPONENTS
+@import './components/container';
+@import './components/pre-title';
+@import './components/title';
+@import './components/modal-window';
+// @import './components/current';
+@import './components/button';
+// @import './components/backdrop';
+// @import './components/modal';
+// @import './components/modal-form';
+
+//LAYOUT
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/contacts';
+@import './layout/footer';
