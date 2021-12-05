@@ -1,0 +1,92 @@
+.galery {
+  padding-bottom: 80px;
+
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-color) 0%,
+    var(--background-color) 24%,
+    var(--white-background-color) 24%,
+    var(--white-background-color) 100%
+  );
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background-color) 0%,
+      var(--background-color) 30%,
+      var(--white-background-color) 30%,
+      var(--white-background-color) 100%
+    );
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background-color) 0%,
+      var(--background-color) 35%,
+      var(--white-background-color) 35%,
+      var(--white-background-color) 100%
+    );
+  }
+}
+.galery-block__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: max-content;
+}
+.galery-block__group {
+  display: flex;
+  flex-direction: column;
+  &:nth-child(2) {
+    padding-top: 24px;
+  }
+  &:nth-child(4) {
+    padding-top: 24px;
+  }
+}
+.galery-block__group:not(:last-child) {
+  margin-right: 2px;
+  @media screen and (min-width: 768px) {
+    margin-right: 4px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 7px;
+  }
+}
+
+.galery-block__content {
+  display: inline-flex;
+  overflow: hidden;
+  flex-grow: 1;
+  border-radius: 5px;
+  width: max-content;
+}
+.galery-block__content:not(:last-child) {
+  margin-bottom: 2px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 4px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 7px;
+  }
+}
+.galery-block__link {
+  width: 40px;
+  @media screen and (min-width: 768px) {
+    width: 87px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 142px;
+  }
+  transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    width: 70px;
+    @media screen and (min-width: 768px) {
+      width: 175px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 285px;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.advantages {
+  background-color: var(--background-color);
+  padding-bottom: 97px;
+}
+
+.advantages__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+.advantages__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.advantages__label {
+  margin-bottom: 15px;
+  font-family: Titan One;
+
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--brand-color);
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.13;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.13;
+  }
+}
+
+.advantages-svg-one::before {
+  content: '';
+  margin-bottom: 10px;
+  display: block;
+
+  width: 50px;
+  height: 50px;
+  background-image: url(.././images/gallery/milk-ice1.svg);
+  background-repeat: no-repeat;
+
+  background-size: auto 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+.advantages-svg-two::before {
+  content: '';
+  margin-bottom: 10px;
+  display: block;
+
+  width: 50px;
+  height: 50px;
+  background-image: url(.././images/gallery/milk-ice2.svg);
+  background-repeat: no-repeat;
+
+  background-size: auto 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+.advantages-svg-three::before {
+  content: '';
+  margin-bottom: 10px;
+  display: block;
+
+  width: 50px;
+  height: 50px;
+  background-image: url(.././images/gallery/milk-ice3.svg);
+  background-repeat: no-repeat;
+
+  background-size: auto 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__content {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+  max-width: 230px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.74;
+    max-width: 180px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+    max-width: 330px;
+  }
+
+  color: var(--dark-text-color);
+}
