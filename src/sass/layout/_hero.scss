@@ -1,52 +1,161 @@
 .hero-section {
   background-color: var(--pink-background-color);
 }
+@keyframes mymove {
+  0% {
+    background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+      url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+      url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+      url(/images/hero/hero-icecream-mobile.png),
+      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+    background-position: 117px 626px, 117px -78px, 117px -61px, 117px -59px, 117px -70px,
+      117px -69px, 117px -93px, 117px bottom, 36px 83px;
+    background-size: 171px 124px, 171px 78px, 171px 61px, 171px 59px, 171px 70px, 171px 69px,
+      171px 93px, 0px 0px, auto;
+  }
+  30% {
+    background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+      url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+      url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+      url(/images/hero/hero-icecream-mobile.png),
+      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+    background-position: 117px bottom, 117px -78px, 117px -61px, 117px -59px, 117px -70px,
+      117px -69px, 117px -93px, 117px bottom, 36px 83px;
+    background-size: 171px 124px, 171px 78px, 171px 61px, 171px 59px, 171px 70px, 171px 69px,
+      171px 93px, 0px 0px, auto;
+  }
+  45% {
+    background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+      url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+      url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+      url(/images/hero/hero-icecream-mobile.png),
+      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+    background-position: 117px bottom, 117px 335px, 117px -61px, 117px -59px, 117px -70px,
+      117px -69px, 117px -93px, 117px bottom, 36px 83px;
+    background-size: 171px 124px, 171px 78px, 171px 61px, 171px 59px, 171px 70px, 171px 69px,
+      171px 93px, 0px 0px, auto;
+  }
+  50% {
+    background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+      url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+      url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+      url(/images/hero/hero-icecream-mobile.png),
+      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+    background-position: 117px bottom, 117px 335px, 117px 310px, 117px -59px, 117px -70px,
+      117px -69px, 117px -93px, 117px bottom, 36px 83px;
+    background-size: 171px 124px, 171px 78px, 171px 61px, 171px 59px, 171px 70px, 171px 69px,
+      171px 93px, 0px 0px, auto;
+  }
+  60% {
+    background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+      url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+      url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+      url(/images/hero/hero-icecream-mobile.png),
+      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+    background-position: 117px bottom, 117px 335px, 117px 310px, 117px 273px, 117px -70px,
+      117px -69px, 117px -93px, 117px bottom, 36px 83px;
+    background-size: 171px 124px, 171px 78px, 171px 61px, 171px 59px, 171px 70px, 171px 69px,
+      171px 93px, 0px 0px, auto;
+  }
+  70% {
+    background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+      url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+      url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+      url(/images/hero/hero-icecream-mobile.png),
+      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+    background-position: 117px bottom, 117px 335px, 117px 310px, 117px 273px, 117px 226px,
+      117px -69px, 117px -93px, 117px bottom, 36px 83px;
+    background-size: 171px 124px, 171px 78px, 171px 61px, 171px 59px, 171px 70px, 171px 69px,
+      171px 93px, 0px 0px, auto;
+  }
+  80% {
+    background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+      url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+      url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+      url(/images/hero/hero-icecream-mobile.png),
+      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+    background-position: 117px bottom, 117px 335px, 117px 310px, 117px 273px, 117px 226px,
+      117px 167px, 117px -93px, 117px bottom, 36px 83px;
+    background-size: 171px 124px, 171px 78px, 171px 61px, 171px 59px, 171px 70px, 171px 69px,
+      171px 93px, 0px 0px, auto;
+  }
 
+  99% {
+    background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+      url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+      url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+      url(/images/hero/hero-icecream-mobile.png),
+      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+    background-position: 117px bottom, 117px 335px, 117px 310px, 117px 273px, 117px 226px,
+      117px 167px, 117px 95px, 117px bottom, 36px 83px;
+    background-size: 171px 124px, 171px 78px, 171px 61px, 171px 59px, 171px 70px, 171px 69px,
+      171px 93px, 0px 0px, auto;
+  }
+  100% {
+    background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+      url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+      url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+      url(/images/hero/hero-icecream-mobile.png),
+      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+
+    background-position: 117px bottom, 117px 335px, 117px 310px, 117px 273px, 117px 226px,
+      117px 167px, 117px 95px, 117px bottom, 36px 83px;
+    background-size: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 171px 410px,
+      auto;
+  }
+}
 .hero {
+  animation-name: mymove;
+  animation-duration: 2000ms;
+  // animation-delay: 4000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
   display: flex;
   position: relative;
   justify-content: space-between;
   height: 502px;
-  background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
-    url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
-    url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
-    url(/images/hero/hero-icecream-mobile.png),
-    radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+  // background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+  //   url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+  //   url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+  //   url(/images/hero/hero-icecream-mobile.png),
+  //   radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
 
-  background-position: 117px bottom, right bottom, right bottom, right bottom, right bottom,
-    right bottom, right bottom, 117px bottom, 36px 83px;
-  background-size: auto, auto, auto, auto, auto, auto, auto, 171px 410px, auto;
+  // background-position: 117px bottom, 117px 335px, 117px 310px, 117px 273px, 117px 226px, 117px 167px,
+  //   117px 95px, 117px bottom, 36px 83px;
+  // background-size: 171px 124px, 171px 78px, 171px 61px, 171px 59px, 171px 70px, 171px 69px,
+  //   171px 93px, 171px 410px, auto;
   background-repeat: no-repeat;
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/hero/hero-icecream-mobile@2x.png),
-      radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
-    background-size: 171px 410px, auto;
-  }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(/images/hero/hero-icecream-mobile@2x.png),
+  //     radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
+  //   // background-size: 171px 410px, auto;
+  // }
 
-  @media screen and (min-width: 768px) {
-    height: 399px;
-    background-image: url(/images/hero/hero-icecream-tablet.png),
-      radial-gradient(circle at 162px 162px, var(--light-brand-color) 162px, transparent 162px);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/hero/hero-icecream-tablet@2x.png),
-        radial-gradient(circle at 162px 162px, var(--light-brand-color) 162px, transparent 162px);
-      background-size: 143px 336px, auto;
-    }
-    background-position: 378px bottom, 307px 31px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   height: 399px;
+  //   background-image: url(/images/hero/hero-icecream-tablet.png),
+  //     radial-gradient(circle at 162px 162px, var(--light-brand-color) 162px, transparent 162px);
+  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //     background-image: url(/images/hero/hero-icecream-tablet@2x.png),
+  //       radial-gradient(circle at 162px 162px, var(--light-brand-color) 162px, transparent 162px);
+  //     background-size: 143px 336px, auto;
+  //   }
+  //   background-position: 378px bottom, 307px 31px;
+  // }
 
-  @media screen and (min-width: 1280px) {
-    height: 665px;
-    background-image: url(/images/hero/hero-icecream-desktop.png),
-      radial-gradient(circle at 269px 269px, var(--light-brand-color) 269px, transparent 269px);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/hero/hero-icecream-desktop@2x.png),
-        radial-gradient(circle at 269px 269px, var(--light-brand-color) 269px, transparent 269px);
-      background-size: 236px 557px, auto;
-    }
-    background-position: 594px bottom, 475px 52px;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   height: 665px;
+  //   background-image: url(/images/hero/hero-icecream-desktop.png),
+  //     radial-gradient(circle at 269px 269px, var(--light-brand-color) 269px, transparent 269px);
+  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //     background-image: url(/images/hero/hero-icecream-desktop@2x.png),
+  //       radial-gradient(circle at 269px 269px, var(--light-brand-color) 269px, transparent 269px);
+  //     background-size: 236px 557px, auto;
+  //   }
+  //   background-position: 594px bottom, 475px 52px;
+  // }
 }
 .hero-title {
   padding-top: 193px;
