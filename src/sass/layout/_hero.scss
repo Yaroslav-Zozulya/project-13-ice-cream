@@ -7,23 +7,29 @@
   position: relative;
   justify-content: space-between;
   height: 502px;
-  background-image: url(/images/hero-icecream-mobile.png),
+  background-image: url(/images/hero/anim/7.png), url(/images/hero/anim/6.png),
+    url(/images/hero/anim/5.png), url(/images/hero/anim/4.png), url(/images/hero/anim/3.png),
+    url(/images/hero/anim/2.png), url(/images/hero/anim/1.png),
+    url(/images/hero/hero-icecream-mobile.png),
     radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
 
+  background-position: 117px bottom, right bottom, right bottom, right bottom, right bottom,
+    right bottom, right bottom, 117px bottom, 36px 83px;
+  background-size: auto, auto, auto, auto, auto, auto, auto, 171px 410px, auto;
+  background-repeat: no-repeat;
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/hero-icecream-mobile@2x.png),
+    background-image: url(/images/hero/hero-icecream-mobile@2x.png),
       radial-gradient(circle at 172px 172px, var(--light-brand-color) 172px, transparent 172px);
     background-size: 171px 410px, auto;
   }
-  background-position: 117px bottom, 36px 83px;
-  background-repeat: no-repeat;
 
   @media screen and (min-width: 768px) {
     height: 399px;
-    background-image: url(/images/hero-icecream-tablet.png),
+    background-image: url(/images/hero/hero-icecream-tablet.png),
       radial-gradient(circle at 162px 162px, var(--light-brand-color) 162px, transparent 162px);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/hero-icecream-tablet@2x.png),
+      background-image: url(/images/hero/hero-icecream-tablet@2x.png),
         radial-gradient(circle at 162px 162px, var(--light-brand-color) 162px, transparent 162px);
       background-size: 143px 336px, auto;
     }
@@ -32,10 +38,10 @@
 
   @media screen and (min-width: 1280px) {
     height: 665px;
-    background-image: url(/images/hero-icecream-desktop.png),
+    background-image: url(/images/hero/hero-icecream-desktop.png),
       radial-gradient(circle at 269px 269px, var(--light-brand-color) 269px, transparent 269px);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/hero-icecream-desktop@2x.png),
+      background-image: url(/images/hero/hero-icecream-desktop@2x.png),
         radial-gradient(circle at 269px 269px, var(--light-brand-color) 269px, transparent 269px);
       background-size: 236px 557px, auto;
     }
@@ -198,6 +204,9 @@
   position: absolute;
   left: 34px;
   top: 245px;
+  animation-name: swing;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
   @media screen and (min-width: 768px) {
     display: block;
   }
@@ -207,6 +216,7 @@
     top: 429px;
   }
 }
+
 .hero-girl-pic {
   display: none;
   position: absolute;
@@ -218,5 +228,67 @@
 
   @media screen and (min-width: 1280px) {
     left: 878px;
+  }
+}
+.picture-text {
+  display: none;
+
+  position: absolute;
+  font-size: 12px;
+  bottom: 84px;
+  right: 120px;
+  text-align: right;
+  animation-name: scale-in-hor-left;
+  animation-duration: 8000ms;
+  animation-delay: 4000ms;
+  animation-iteration-count: infinite;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 22px;
+    bottom: 145px;
+    right: 264px;
+  }
+}
+
+@keyframes swing {
+  3% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  6% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  9% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  12% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  15% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes scale-in-hor-left {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  5% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
