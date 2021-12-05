@@ -1,6 +1,9 @@
 .products {
   padding-top: 121px;
   padding-bottom: 96px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 112px;
+  }
 }
 
 .products__pretitle {
@@ -10,9 +13,17 @@
 .products__title {
   text-align: center;
   margin-bottom: 144px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
+  }
 }
 .products_list {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
 }
 .products__item {
   text-align: center;
@@ -20,48 +31,47 @@
   padding-right: 53px;
   padding-bottom: 41px;
   padding-left: 53px;
+  @media screen and (min-width: 768px) {
+    padding-top: 161px;
+    padding-right: 34px;
+    padding-bottom: 112px;
+    padding-left: 34px;
+  }
 }
 
-.products__btn {
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 22px;
-  border: none;
-}
-
-.btn__svg {
-  width: 20px;
-  height: 10px;
-
-  fill: var(--brand-color);
+.products__item {
+  border-radius: 24px;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+    padding-top: 152px;
+    padding-right: 11px;
+    padding-bottom: 40px;
+    padding-left: 11px;
+  }
 }
 
 .products__item:not(:last-child) {
   margin-bottom: 130px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 
 .products__item--background1 {
   background-color: var(--pink-background-color);
-  border-radius: 24px;
-  position: relative;
 }
 .products__item--background2 {
   background-color: var(--brown-background-color);
-  border-radius: 24px;
-  position: relative;
 }
 
 .products__item--background3 {
   background-color: var(--green-background-color);
-  border-radius: 24px;
-  position: relative;
 }
-
-.products__item--img1::before {
+.products__item--img::before {
   display: block;
   content: '';
-  background-image: url('/images/products/product1-m.png');
   background-repeat: no-repeat;
   position: absolute;
   left: 50%;
@@ -70,64 +80,50 @@
   width: 249px;
   height: 252px;
   @media screen and (min-width: 768px) {
-    background-image: url('/images/products/product1-m.png');
+    left: 45%;
     width: 220px;
     height: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 335px;
+    height: 335px;
+  }
+}
+.products__item--img1::before {
+  background-image: url('/images/products/product1-m.png');
+  @media screen and (min-width: 768px) {
+    background-image: url('/images/products/product1-m.png');
   }
   @media screen and (min-width: 1200px) {
     background-image: url('/images/products/product1-d.png');
-    width: 335px;
-    height: 335px;
   }
 }
 .products__item--img2::before {
-  display: block;
-  content: '';
   background-image: url('/images/products/product2-m.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -25%;
-  width: 249px;
-  height: 252px;
+
   @media screen and (min-width: 768px) {
     background-image: url('/images/products/product2-m.png');
-    width: 220px;
-    height: 226px;
   }
   @media screen and (min-width: 1200px) {
     background-image: url('/images/products/product2-d.png');
-    width: 335px;
-    height: 335px;
   }
 }
 
 .products__item--img3::before {
-  display: block;
-  content: '';
   background-image: url('/images/products/product3-m.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -25%;
-  width: 249px;
-  height: 252px;
   @media screen and (min-width: 768px) {
     background-image: url('/images/products/product3-m.png');
-    width: 220px;
-    height: 226px;
   }
   @media screen and (min-width: 1200px) {
     background-image: url('/images/products/product3-d.png');
-    width: 335px;
-    height: 335px;
   }
 }
 
 .products__item--form {
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
 .products__item--title {
   font-family: Titan One;
@@ -138,6 +134,9 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--white-background-color);
+  @media screen and (min-width: 768px) {
+    white-space: nowrap;
+  }
 }
 
 .products__item--title::after {
@@ -160,4 +159,26 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--white-background-color);
+
+  @media screen and (min-width: 768px) {
+    width: 198px;
+    height: 124px;
+    line-height: 1.76;
+    overflow: hidden;
+  }
+}
+.products__btn {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 22px;
+  border: none;
+}
+
+.btn__svg {
+  padding: 0;
+  width: 20px;
+  height: 10px;
+
+  fill: var(--brand-color);
 }
