@@ -1,5 +1,6 @@
 /* уставливаем фон хедера и верхний отступ падингом*/
 .header {
+  background-color: #ffb8ca50;
   position: fixed;
   z-index: 10;
   width: 100vw;
@@ -37,6 +38,7 @@
 
 /* мобильное меню  */
 .menu {
+  z-index: 15;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
@@ -125,6 +127,10 @@
       background-color: var(--light-btn-hover);
     }
   }
+}
+
+.header__order-button ~ .menu.active {
+  display: none;
 }
 
 /* контейнер кнопки заказа и бургера в таблетке */

@@ -1,0 +1,179 @@
+.contacts-section {
+  background-image: linear-gradient(#ffffff 0% 6%, #fff5f6 6% 100%);
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.contacts__container {
+  padding-bottom: 113px;
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 113px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 158px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 158px;
+  }
+}
+
+.contacts__list {
+  margin: 0 auto;
+  max-width: 220px;
+  margin-bottom: 54px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 220px;
+    margin-bottom: 54px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 220px;
+    margin-bottom: 81px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 330px;
+    margin-bottom: 86px;
+  }
+}
+
+.contacts__card {
+  padding: 43px 21px 43px 20px;
+  background: var(--white-background-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.contacts__card-wrap {
+  margin: 0 auto;
+}
+
+.contacts_title-board {
+  border-radius: 4px;
+}
+
+.contacts_title-board-brown {
+  background-color: var(--brown-background-color);
+  width: 80px;
+}
+
+.contacts_title-board-green {
+  background-color: var(--green-background-color);
+  width: 130px;
+}
+
+.contacts__category-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+}
+.contacts__card-item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--separating-line-color);
+}
+.contacts__title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+
+  color: var(--dark-text-color);
+}
+
+.contacts_city {
+  margin-bottom: 10px;
+}
+
+.contacts__title-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--light-text-color);
+}
+.contacts_card-item {
+  /* оставил классы пустые до обработки десктопа */
+}
+.contacts__weekdays-schedule {
+  /* оставил классы пустые до обработки десктопа */
+}
+.contacts__day-text {
+  /* оставил классы пустые до обработки десктопа */
+}
+.contacts__time-text {
+  color: var(--light-brand-color);
+}
+.contacts__weekends-schedule {
+  /* оставил классы пустые до обработки десктопа */
+}
+
+.contacts__card-item-connect {
+  padding-top: 25px;
+  padding-bottom: 0px;
+}
+
+.contacts__connect {
+  /* оставил классы пустые до обработки десктопа */
+}
+.contacts__connect-item {
+  /* оставил классы пустые до обработки десктопа */
+}
+
+.contacts__tel {
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+}
+
+.contacts__mail {
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+}
+
+.contacts__btn {
+  margin: 0 auto;
+  width: 161px;
+  align-items: center;
+}
+
+.contacts__btn-item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__btn-location {
+  transition: color 250ms linear;
+  width: 161px;
+}
+
+.contacts__btn-franchise {
+  transition: color 250ms linear;
+  width: 161px;
+}
