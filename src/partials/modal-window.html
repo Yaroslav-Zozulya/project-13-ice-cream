@@ -1,31 +1,62 @@
-<div class="backdrop modal" data-modal="3">
-    <div class="modal-window">
+<div class="modal-order modal" data-modal="3">
+    <!--   Svg иконка для закрытия окна  -->
         <svg class="menu__close-menu  js-modal-close">
             <use href="../src/images/icons.svg#icon-close"></use>
         </svg>
         <form>
             <div class="modal-window__content">
-                <h2 class="modal-window__message">Оставьте свои данные для заказа</h2>
+                <h2 class="modal-window__message">Please, input your data for order</h2>
+
                 <div class="modal-window__form">
-                    <label for="name">Имя</label>
+                    <p class="modal-window__call">Choose ice-cream</p>
+                    <ul class="modal-window__icecreams">
+                        <li class="modal-window__icecream-item">
+                            
+                            <label class="modal-window__name-icecream">
+                                <input type="checkbox" name="ice" value="IceCream" checked>
+                            <img src="../src/images/products/product1-d.png" alt="">    
+                            </label>
+                            <p class="modal-window__price">35$</p>
+                        </li>
+
+                        <li class="modal-window__icecream-item">
+                            
+                            <label class="modal-window__name-icecream">
+                                <input type="checkbox" name="ice" value="IceCream">
+                    <img src="../src/images/products/product1-d.png" alt="">
+                            </label>
+                            <p class="modal-window__price">35$</p>
+                        </li>
+            
+                        <li class="modal-window__icecream-item">
+                           
+                            <label class="modal-window__name-icecream">
+                                <input type="checkbox" name="ice" value="IceCream">
+                            <img src="../src/images/products/product1-d.png" alt="">
+                            </label>
+                            <p class="modal-window__price">35$</p>
+                        </li>   
+                    </ul>
+     
+                
+                </div>
+
+                <div class="modal-window__form">
+                    <label for="name">Name</label>
                     <input type="text" name="name" id="name" class="modal-window__input" placeholder="">
                 </div>
 
                 <div class="modal-window__form">
-                    <label class="modal-window__forma-name" for="phone">Телефон</label>
+                    <label class="modal-window__forma-name" for="phone">Phone</label>
                     <input type="tel" name="phone" id="phone" class="modal-window__input">
                 </div>
-
                 <div class="modal-window__form">
-                    <label class="modal-window__forma-name" for="email">Почта</label>
-                    <input type="email" name="email" id="email" class="modal-window__input">
+                    <label class="modal-window__forma-name" for="adress">Adress for delivery</label>
+                    <input type="text" name="adress" id="email" class="modal-window__input">
                 </div>
 
-                <div class="modal-window__form">
-                    <label class="modal-window__forma-name" for="comment">Комментарий</label>
-                    <textarea class="modal-window__text-area" name="comment-area" id="comment" cols="30" rows="10"
-                        placeholder=""></textarea>
-                </div>
+
+                
 
                 <div class="modal-window__agreement">
 
@@ -36,11 +67,16 @@
                     </label>
                 </div>
 
-                <button type="submit" class="menu__button btn btn_light">
+                <button type="submit" class="menu__button-submit btn btn_light">
                     Отправить заказ
                 </button>
             </div>
         </form>
-
-    </div>
 </div>
+
+
+<!-- Подложка под модальным окном -->
+<div class="backdrop js-overlay-modal"></div>
+
+
+
