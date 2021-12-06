@@ -1,55 +1,57 @@
+
 <header class="header">
-    <div class="container">
-        <!-- логотип -->
-        <div class="header__content">
-            <a href="index.html">
-                <picture>
-                    <source srcset="
-                                    ../src/images/logo/logo.webp 1x, 
-                                    ../src/images/logo/logo@2x.webp 2x" type="image/webp">
-                    <source srcset="
-                                    ../src/images/logo/logo.png 1x,
-                                    ../src/images/logo/logo@2x.png 2x">
-                    <img class="header__logo" src="../src/images/logo/logo.png" alt="Logo of company" width="199" height="50">
-                </picture>
-            </a>
-            <!--  меню десктопа и таблетки -->
-            <nav class="header__menu-nav">
-                <ul class="header__menu-links">
-                    <li class="header__menu-item">
-                        <a href="index.html" class="header__menu-link">Home</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#about-us" class="header__menu-link">About us</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#how-its-made" class="header__menu-link">How it`s made?</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#our-products" class="header__menu-link">Our products</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#contacts" class="header__menu-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- контейнер кнопок вызова меню и кнопки заказа-->
-            <div class="header__burger-and-btn">
-                <!--  кнопка вызова меню -->
-                <button class="header__open-close-menu-btn js-open-modal" data-modal="1">
-                    <svg class="header__open-close-menu">
-                        <use href="../src/images/icons.svg#icon-burger" class="header__burger"></use>
-                    </svg>
-                </button>
-                <!--  кнопка заказа -->
-                <button class="header__order-button btn btn_light js-open-modal" data-modal="3">By now
-                    <svg class="menu__button-icon"l>
-                        <use href="../src/images/icons.svg#icon-right"></use>
-                    </svg>
-                </button>
+        <div class="container">
+            <!-- логотип -->
+            <div class="header__content">
+                <a href="index.html" class="header__logo">
+                    <picture class="header__logo-img">
+                        <source srcset="
+                                            ../src/images/logo/logo.webp 1x, 
+                                            ../src/images/logo/logo@2x.webp 2x" type="image/webp">
+                        <source srcset="
+                                            ../src/images/logo/logo.png 1x,
+                                            ../src/images/logo/logo@2x.png 2x">
+                        <img class="header__logo-img" src="../src/images/logo/logo.png" alt="Logo of company" width="199"
+                            height="50">
+                    </picture>
+                </a>
+                <!--  меню десктопа и таблетки -->
+                <nav class="header__menu-nav">
+                    <ul class="header__menu-links">
+                        <li class="header__menu-item">
+                            <a href="#hero" class="header__menu-link ">Home</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#about-us" class="header__menu-link">About us</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#adv" class="header__menu-link">How it`s made?</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#our-products" class="header__menu-link">Our products</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#contacts" class="header__menu-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- контейнер кнопок вызова меню и кнопки заказа-->
+                <div class="header__burger-and-btn">
+                    <!--  кнопка вызова меню -->
+                    <button class="header__open-close-menu-btn js-open-modal" data-modal="1">
+                        <svg class="header__open-close-menu">
+                            <use href="../src/images/icons.svg#icon-burger" class="header__burger"></use>
+                        </svg>
+                    </button>
+                    <!--  кнопка заказа -->
+                    <button class="header__order-button btn btn_light js-open-modal" data-modal="3">By now
+                        <svg class="menu__button-icon">
+                            <use href="../src/images/icons.svg#icon-right"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 </header>
 
 <!-- мобильное меню -->
@@ -68,13 +70,13 @@
     <nav class="menu__nav">
         <ul class="menu__links">
             <li class="menu__item">
-                <a href="index.html" class="menu__link">Home</a>
+                <a href="#hero" class="menu__link">Home</a>
             </li>
             <li class="menu__item">
                 <a href="#about-us" class="menu__link">About us</a>
             </li>
             <li class="menu__item">
-                <a href="#how-its-made" class="menu__link">How it`s made?</a>
+                <a href="#adv" class="menu__link">How it`s made?</a>
             </li>
             <li class="menu__item">
                 <a href="#our-products" class="menu__link">Our products</a>
