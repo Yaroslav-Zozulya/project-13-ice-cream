@@ -2,38 +2,40 @@
   <div class="container">
     <p class="pre-title pre-title__about">tradition and love</p>
     <h2 class="title title__about">how it’s made?</h2>
+    <div class="about__block">
+      <picture class="about__picture">
+        <source
+          media="(min-width:769px)"
+          srcset="./images/cow/cow-d.png 1x, ./images/cow/cow-d@2x.png 2x"
+        />
+        <source
+          srcset="./images/cow/cow-t.png 1x, ./images/cow/cow-t@2x.png 2x"
+          media="(min-width:481px)"
+        />
+        <source
+          srcset="./images/cow/cow-m.png 1x, ./images/cow/cow-m@2x.png 2x"
+          media="(max-width:480px)"
+        />
+        <img class="about-image__main" src="./images/cow/cow-m.png" alt="Фото коровы" />
+      </picture>
+      <div class="about-text__cont">
+        <p class="about-text about-text__pre">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about-text about-text__main">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
+        </p>
 
-    <picture>
-      <source
-        media="(min-width:769px)"
-        srcset="./images/cow/cow-d.png 1x, ./images/cow/cow-d@2x.png 2x"
-      />
-      <source
-        srcset="./images/cow/cow-t.png 1x, ./images/cow/cow-t@2x.png 2x"
-        media="(min-width:481px)"
-      />
-      <source
-        srcset="./images/cow/cow-m.png 1x, ./images/cow/cow-m@2x.png 2x"
-        media="(max-width:480px)"
-      />
-      <img class="about-image__main" src="./images/cow/cow-m.png" alt="Фото коровы" />
-    </picture>
-    <div class="about-text__cont">
-      <p class="about-text about-text__pre">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-      </p>
-      <p class="about-text about-text__main">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
-        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-        maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
-      </p>
+        <button class="btn btn_light js-open-modal" data-modal="4">
+          Read more
+          <svg class="btn-readmore-icon" width="5px" height="8px">
+            <use href="./images/icons.svg#icon-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-    <button class="btn btn_light">
-      Read more
-      <svg class="btn-readmore-icon" width="5px" height="8px">
-        <use href="./images/icons.svg#icon-right"></use>
-      </svg>
-    </button>
   </div>
 </section>
