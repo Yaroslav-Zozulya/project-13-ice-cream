@@ -68,15 +68,44 @@
         </ul>
         <ul class="contacts__btn list">
             <li class="contacts__btn-item">
-                <button class="contacts__btn-location btn btn_dark" data-modal-open type="button">
+                <button class="contacts__btn-location btn_dark btn js-open-modal" data-modal="77" type="button">
                     Our Locations
                 </button>
             </li>
             <li class="contacts__btn-item">
-                <button class="contacts__btn-franchise btn btn_light" data-modal-open type="button">
+                <button class="contacts__btn-franchise btn_light btn js-open-modal" data-modal="76" type="button">
                     Franchise
                 </button>
             </li>
         </ul>    
     </div>
 </section>
+
+<!-- модалка Our location -->
+
+<div class="modal__location modal" data-modal="77">
+    <svg class="close-modal js-modal-close">
+        <use href="../src/images/icons.svg#icon-close"></use>
+    </svg>
+        <ul class="modal__location list">
+                <li class="modal__adress-item">
+                    <a class="modal__adress-map link" href="https://goo.gl/maps/SMpwnwyBwNe9SE3i9" target="blank"
+                        rel="noopener noreferer">
+                        Chicago</a>
+                </li>
+                <li class="modal__adress-item">
+                <a class="modal__adress-map link" href="https://goo.gl/maps/Un65ceybLNSDigU77" target="blank"
+                    rel="noopener noreferer">
+                    Los Angeles</a>
+                </li>
+                <li class="modal__adress-item">
+                <a class="modal__adress-map link" href="https://goo.gl/maps/4eitY8UDnRLLEGQu8" target="blank"
+                    rel="noopener noreferer">
+                    New York</a>
+                </li>
+            </ul>
+        </div>
+        
+
+<div class="backdrop js-overlay-modal"></div>
+
