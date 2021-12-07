@@ -1,32 +1,23 @@
 .contacts-section {
+  padding-bottom: 113px;
   background-image: linear-gradient(#ffffff 0% 6%, #fff5f6 6% 100%);
 
   @media screen and (min-width: 480px) {
+    padding-bottom: 113px;
     background-image: linear-gradient(#ffffff 0% 6%, #fff5f6 6% 100%);
   }
 
   @media screen and (min-width: 768px) {
+    padding-bottom: 165px;
     background-image: linear-gradient(#ffffff 0% 8%, #fff5f6 8% 100%);
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: linear-gradient(#ffffff 0% 12%, #fff5f6 12% 100%);
-  }
-}
-
-.contacts__container {
-  padding-bottom: 113px;
-
-  @media screen and (min-width: 480px) {
-    padding-bottom: 113px;
-  }
-
-  @media screen and (min-width: 768px) {
     padding-bottom: 165px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-bottom: 165px;
+    background-image: url('../images/drops/drops.png'),
+      linear-gradient(#ffffff 0% 12%, #fff5f6 12% 100%);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
   }
 }
 
@@ -83,70 +74,8 @@
     }
   }
 }
-.contacts__card-wrap {
-  margin: 0 auto;
-
-  @media screen and (min-width: 480px) {
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1280px) {
-  }
-}
 
 .contacts_title-board {
-  border-radius: 4px;
-
-  @media screen and (min-width: 480px) {
-    border-radius: 4px;
-  }
-
-  @media screen and (min-width: 768px) {
-    border-radius: 6px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    border-radius: 6px;
-  }
-}
-
-.contacts_title-board-brown {
-  background-color: var(--brown-background-color);
-  width: 80px;
-
-  @media screen and (min-width: 480px) {
-    border-radius: 80px;
-  }
-
-  @media screen and (min-width: 768px) {
-    border-radius: 73px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    border-radius: 73px;
-  }
-}
-
-.contacts_title-board-green {
-  background-color: var(--green-background-color);
-  width: 130px;
-
-  @media screen and (min-width: 480px) {
-    border-radius: 130px;
-  }
-
-  @media screen and (min-width: 768px) {
-    border-radius: 138px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    border-radius: 138px;
-  }
-}
-
-.contacts__category-title {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
@@ -156,25 +85,58 @@
   text-transform: uppercase;
 
   color: var(--white-text-color);
-}
-.contacts__card-item {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--separating-line-color);
+  border-radius: 4px;
+  margin-bottom: 25px;
 
   @media screen and (min-width: 480px) {
+    border-radius: 4px;
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    border-radius: 6px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    border-radius: 6px;
+    margin-bottom: 32px;
   }
 }
+
+.contacts_title-board-brown {
+  background-color: var(--brown-background-color);
+  width: 80px;
+
+  @media screen and (min-width: 480px) {
+    width: 80px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 73px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 73px;
+  }
+}
+
+.contacts_title-board-green {
+  background-color: var(--green-background-color);
+  width: 130px;
+
+  @media screen and (min-width: 480px) {
+    width: 130px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 138px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+  }
+}
+
 .contacts__title {
   font-weight: 500;
   font-size: 12px;
@@ -220,37 +182,72 @@
   font-size: 12px;
   line-height: 1.5;
   color: var(--light-text-color);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
 
   @media screen and (min-width: 480px) {
     font-size: 12px;
     line-height: 1.5;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.66;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.83;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
 }
-.contacts_card-item {
-  /* оставил классы пустые до обработки десктопа */
+
+.contacts__title-text-margin {
+  padding-bottom: 25px;
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 32px;
+  }
 }
-.contacts__weekdays-schedule {
-  /* оставил классы пустые до обработки десктопа */
+
+.contacts__title-text-border {
+  border-bottom: 1px solid var(--separating-line-color);
 }
+
 .contacts__day-text {
   letter-spacing: 0;
+}
+
+.contacts__time-text-margin {
+  margin-bottom: 10px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 .contacts__time-text {
   letter-spacing: 0;
   color: var(--light-brand-color);
-}
-.contacts__weekends-schedule {
-  /* оставил классы пустые до обработки десктопа */
 }
 
 .contacts__card-item-connect {
@@ -270,11 +267,26 @@
   }
 }
 
-.contacts__connect {
-  /* оставил классы пустые до обработки десктопа */
-}
-.contacts__connect-item {
-  /* оставил классы пустые до обработки десктопа */
+.contacts__title-connect {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--light-text-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 
 .contacts__tel {
