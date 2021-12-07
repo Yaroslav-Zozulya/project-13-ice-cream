@@ -38,6 +38,7 @@
     margin-bottom: 55px;
   }
 }
+
 .about-text {
   font-family: DM Sans;
   font-style: normal;
@@ -83,6 +84,18 @@
     margin-left: 74px;
   }
 }
+.about-text__modal {
+  padding-top: 15px;
+  color: var(--brand-color);
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 17px;
+    line-height: 1.94;
+  }
+}
 .btn-readmore-icon {
   margin-left: 13px;
 }
@@ -93,7 +106,43 @@
 }
 .about-image__main {
   margin: 0 auto;
+  animation-name: swing;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
+
 .about-modal {
+  /* скрываете, как Вам нравится */
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
   background-color: var(--pink-background-color);
+  background-image: url('../images/milk/milk-m.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% 93%;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+
+  @media screen and(min-width: 1200px) {
+    background-image: url('../images/milk/milk-d.png');
+  }
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быт
+   /*   покзуем при добавлении класса актив, что и делает наш скрипт */
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
