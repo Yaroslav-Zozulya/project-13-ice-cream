@@ -53,6 +53,7 @@
   height: 100vh;
   background-color: #e17992;
   transition: transform 250ms linear;
+  overflow-y: scroll;
 
   @media screen and(min-width:768px) {
     height: 100vh;
@@ -213,4 +214,3 @@
 .header__logo-img {
   display: block;
 }
-
