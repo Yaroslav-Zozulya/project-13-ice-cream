@@ -53,7 +53,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #e17992;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, visibility 250ms linear;
   overflow-y: scroll;
 
   @media screen and(min-width:768px) {
