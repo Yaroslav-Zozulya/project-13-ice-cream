@@ -220,3 +220,75 @@
 
   fill: var(--brand-color);
 }
+
+.products-modal {
+  visibility: hidden;
+  transition: 0.2s all;
+  background-image: url('../images/products/1.png');
+  background-size: auto;
+  background-color: rgba($color: hsl(175, 69%, 87%), $alpha: 1);
+  // background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 370px;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+
+  @media screen and(min-width: 768px) {
+    padding: 35px;
+    max-width: 450px;
+    height: 500px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    max-width: 450px;
+    height: 550px;
+  }
+
+  &.active {
+    visibility: visible;
+    transition: 0.2s all;
+    pointer-events: auto;
+  }
+}
+
+.close-modal-prod {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: var(--dark-text-color);
+  cursor: pointer;
+}
+
+.products-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.58;
+}
+.products-text__modal {
+  padding-top: 15px;
+  color: var(--light-text-color);
+
+  @media screen and(min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+  @media screen and(min-width: 1280px) {
+    font-size: 17px;
+    line-height: 1.94;
+  }
+}
