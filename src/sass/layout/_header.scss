@@ -41,6 +41,7 @@
 
 /* мобильное меню  */
 .menu {
+  visibility: hidden;
   z-index: 25;
   margin: 0 auto;
   padding-right: 20px;
@@ -52,7 +53,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #e17992;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, visibility 250ms linear;
   overflow-y: scroll;
 
   @media screen and(min-width:768px) {
@@ -62,6 +63,7 @@
 }
 
 .menu.active {
+  visibility: visible;
   transform: translateX(-100%);
 }
 
@@ -69,6 +71,14 @@
 .menu.active {
   @media screen and(min-width:1280px) {
     display: none;
+  }
+}
+
+@media screen and(min-width:1280px) {
+  .backdrop.js-overlay-modal {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
 
