@@ -146,9 +146,10 @@
 }
 //сократить повторение кода
 .reviews__link {
+  display: flex;
+  align-items: center;
   width: fit-content;
   margin: 0 auto;
-  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
@@ -182,4 +183,12 @@
 .swiper-pagination-bullet-active {
   background: url(../images/pagination-active.svg);
   border-radius: 0;
+}
+
+.reviews__link__delimiter {
+  display: block;
+  width: 1px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: var(--alt-btn-color);
 }
