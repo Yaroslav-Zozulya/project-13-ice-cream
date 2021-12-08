@@ -104,22 +104,6 @@
   border-top: 1px solid #e18298;
 }
 
-/* цвет и шрифт пунктов мобильного меню */
-.menu__link {
-  display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  color: var(--white-text-color);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1.29;
-  font-weight: bold;
-  transition: color 250ms linear;
-  &.current {
-    color: #d41443;
-  }
-}
-
 /* кнопка заказа в мобильной версии */
 .menu__button {
   width: 209px;
@@ -206,14 +190,34 @@
   display: block;
 }
 
-.header__menu-link {
+/* ссылки меню десктопа и таблетки */
+
+@media screen and(min-width:1280px) {
+  .header__link {
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    color: var(--white-text-color);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: bold;
+    transition: color 250ms linear;
+    &.current {
+      color: #d41443;
+    }
+  }
+}
+
+/* цвет и шрифт ссылок (пунктов) мобильного меню */
+.menu__link {
   display: block;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: var(--white-text-color);
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
+  font-size: 14px;
+  line-height: 1.29;
   font-weight: bold;
   transition: color 250ms linear;
   &.current {
