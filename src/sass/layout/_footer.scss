@@ -3,16 +3,16 @@
 }
 
 .footer__container {
-  padding-bottom: 43px;
+  margin-bottom: 43px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 91px;
+    margin-bottom: 91px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 97px;
+    margin-bottom: 97px;
   }
 }
 
