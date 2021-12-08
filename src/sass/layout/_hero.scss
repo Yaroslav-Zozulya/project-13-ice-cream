@@ -10,12 +10,18 @@
   overflow: hidden;
   background-repeat: no-repeat;
   background-image: radial-gradient(
-    circle at 172px 172px,
+    circle at left 208px top 255px,
     var(--light-brand-color) 172px,
     transparent 172px
   );
 
-  background-position: 36px 83px;
+  @media screen and (min-width: 420px) {
+    background-image: radial-gradient(
+      circle at right 198px top 255px,
+      var(--light-brand-color) 172px,
+      transparent 172px
+    );
+  }
 
   @media screen and (min-width: 768px) {
     height: 399px;
@@ -154,6 +160,9 @@
 .hero-right-part-item {
   position: relative;
   z-index: 1;
+  &:hover {
+    animation: jello-vertical 0.9s both;
+  }
   &:first-child {
     margin-bottom: 15px;
 
@@ -179,6 +188,29 @@
       right: -16px;
       top: -7px;
     }
+  }
+}
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }
 
@@ -293,12 +325,18 @@
   z-index: 0;
   left: 117px;
   bottom: 0;
-  width: 100%;
+  width: 171px;
   opacity: 0;
+  @media screen and (min-width: 420px) {
+    left: auto;
+    right: 106px;
+  }
   @media screen and (min-width: 768px) {
     left: 378px;
+    width: 143px;
   }
   @media screen and (min-width: 1280px) {
+    width: 236px;
     left: 594px;
   }
   animation-name: icecream-pic;
@@ -324,6 +362,10 @@
   animation-iteration-count: 1;
   left: 117px;
   width: 171px;
+  @media screen and (min-width: 420px) {
+    left: auto;
+    right: 106px;
+  }
   @media screen and (min-width: 768px) {
     left: 378px;
     width: 143px;
