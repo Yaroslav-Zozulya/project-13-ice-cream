@@ -4,7 +4,7 @@ const observer = new IntersectionObserver( (entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting)
          {
-            document.querySelectorAll('.header__menu-link').forEach((link) => {
+            document.querySelectorAll('.menu__link').forEach((link) => {
                 link.classList.toggle(
                     'current',
                     getId(link) === entry.target.id
@@ -23,7 +23,7 @@ document.querySelectorAll('section').forEach(
 
 
 document.querySelector('.header__menu-links').addEventListener('click', (Event) => {
-    if (Event.target.classList.contains('header__menu-link')) {
+    if (Event.target.classList.contains('menu__link')) {
         Event.preventDefault();
 
         window.scrollTo({
