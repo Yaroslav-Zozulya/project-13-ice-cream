@@ -36,7 +36,7 @@
   max-width: 500px;
 
   /*  Центрируем и задаем z-index */
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   pointer-events: none;
@@ -45,20 +45,33 @@
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  padding: 30px;
+  padding: 40px;
   border-radius: 3px;
-  background-color: #f5d02b;
+  background-color: var(--pink-background-color);
   transition: 0.3s all;
+
+  animation: animate75 3000ms;
 
   @media (min-width: 480px) {
     width: 450px;
   }
   @media (min-width: 768px) and(max-width:1280px) {
     width: 450px;
+    height: 450px;
+
   }
   @media (min-width: 1280px) {
     width: 528px;
-    height: 681px;
+  }
+}
+
+@keyframes animate75 {
+  50% {
+    transform: scale(0.75);
+  }
+
+  0% {
+    transform: scale(1);
   }
 }
 
@@ -84,18 +97,14 @@
 
 /* Стили для кнопки закрытия */
 
-.modal-window__content {
-  padding: 40px;
-}
-
 .modal-window__message {
   font-family: 'DM Sans', sans-serif;
-  color: var(--light-text-color);
+  color: var(--white-background-color);
   text-align: center;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 
 @media screen and(max-width:480px) {
@@ -125,7 +134,7 @@
 }
 
 .modal-window__input {
-  background-color: #f5d02b;
+  background-color: var(--pink-background-color);
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -134,26 +143,35 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
-    border: 1px solid #2196f3;
+    border: 1px solid var(--brand-color);
   }
-  &:focus ~ .modal-window__icon,
-  &:hover ~ .modal-window__icon {
-    fill: var(--hover-web-color);
+  &:focus ~ .modal-window__input-icon,
+  &:hover ~ .modal-window__input-icon {
+    fill: var(--brand-color);
   }
+}
+
+.modal-window__input-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: var(--light-text-color);
 }
 
 .modal-window__agree {
   color: var(--light-text-color);
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .modal-window__link {
   color: var(--brand-color);
+  text-decoration: underline;
 }
 
 .modal-window__agreement {
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .menu__button-submit {
@@ -162,31 +180,45 @@
 }
 
 .modal-window__call {
-  margin-bottom: 20px;
+  display: block;
+  margin-bottom: 40px;
   font-size: 1.5rem;
-  color: green;
+  color: var(--brand-color);
   font-family: 'DM Sans', sans-serif;
   text-align: center;
+  font-weight: 700;
+}
+
+.modal-window__choose-products {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--dark-text-color);
+
+  border: 1px solid var(--light-text-color);
+  border-radius: 11px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 0;
+  }
+}
+
+.modal-window__item {
+  font-size: 16px;
 }
 
 .modal-window__price {
-  display: inline-block;
-  color: green;
-  font-size: 1.5rem;
-  font-family: Titan One;
+  color: var(--brand-color);
 }
 
-.modal-window__icecream-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+.modal-window__form-name {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
-
-.modal-window__name-icecream {
-  font-size: 1.5rem;
-  font-family: Titan One;
-  color: green;
-  letter-spacing: 0.1rem;
-}
-
-/* настройка блока выбора мороженного */
