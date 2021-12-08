@@ -48,11 +48,11 @@
   color: var(--dark-text-color);
   background: repeating-linear-gradient(
     180deg,
-    #e1e1e1 0,
+    var(--gradient-line) 0,
     transparent 1px,
     transparent 30px,
-    #e1e1e1 0,
-    #e1e1e1 31px
+    var(--gradient-line) 0,
+    var(--gradient-line) 31px
   );
   background-position: center bottom 3px;
   @media screen and (min-width: 768px) {
