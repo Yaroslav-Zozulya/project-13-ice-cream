@@ -397,7 +397,7 @@
   transition: 0.3s all;
 }
 
-.modal-field__location {
+.modal__location {
   overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
@@ -419,7 +419,7 @@
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   padding: 30px;
   border-radius: 3px;
-  background-color: tomato;
+  background-color: var(--pink-background-color);
   transition: 0.3s all;
 
   @media (min-width: 480px) {
@@ -443,20 +443,27 @@
   fill: #444;
   cursor: pointer;
   z-index: 35;
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
 }
 
 /* Стили для активных классов подложки и окна */
 
-.modal-field__location.active,
+.modal__location.active,
 .backdrop.active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 .modal__adress-item {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .modal__adress-map {
+  font-family: Titan One;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
@@ -465,9 +472,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: var(--white-text-color);
+  color: var(--brand-color);
   border-radius: 4px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   margin-bottom: 25px;
+  display: block;
 
   @media screen and (min-width: 480px) {
     border-radius: 4px;
@@ -475,11 +487,17 @@
 
   @media screen and (min-width: 768px) {
     border-radius: 6px;
-    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1280px) {
     border-radius: 6px;
-    margin-bottom: 32px;
   }
+}
+
+.modal__adress-map-brown {
+  background-color: var(--brown-background-color);
+}
+
+.modal__adress-map-green {
+  background-color: var(--green-background-color);
 }
