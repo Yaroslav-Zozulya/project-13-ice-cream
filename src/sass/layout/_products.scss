@@ -166,20 +166,34 @@
   }
 }
 
-.products__item--title::after {
+.products__dots {
+  margin: 0 auto 18px;
+  width: 4px;
+  height: 4px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--white-text-color);
+}
+.products__dots::before,
+.products__dots::after {
+  width: 4px;
+  height: 4px;
   display: block;
   content: '';
-  background-image: url('/images/products/prod_card_elips.png');
-  width: 26px;
-  height: 6px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-bottom: 30px;
-  margin-left: auto;
-  @media screen and (min-width: 1280px) {
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
+  position: absolute;
+  border-radius: inherit;
+  background-color: inherit;
+}
+
+.products__dots::before {
+  left: -10px;
+}
+
+.products__dots::after {
+  right: -10px;
 }
 
 .products__item--text {
@@ -282,7 +296,7 @@
 }
 .products-text__modal {
   padding-top: 15px;
-  color: var(--light-text-color);
+  color: var(--brand-color);
 
   @media screen and(min-width: 768px) {
     font-size: 16px;
