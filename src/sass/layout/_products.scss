@@ -223,7 +223,8 @@
 
 .products-modal {
   visibility: hidden;
-  transition: 0.2s all;
+  opacity: 0;
+  transition: 0.8s all;
   background-image: url('../images/products/1.png');
   background-size: auto;
   background-color: rgba($color: hsl(175, 69%, 87%), $alpha: 1);
@@ -256,8 +257,8 @@
   }
 
   &.active {
+    opacity: 1;
     visibility: visible;
-    transition: 0.2s all;
     pointer-events: auto;
   }
 }
@@ -265,7 +266,7 @@
 .close-modal-prod {
   width: 25px;
   height: 25px;
-  position: absolute;
+
   top: 20px;
   right: 20px;
   fill: var(--dark-text-color);

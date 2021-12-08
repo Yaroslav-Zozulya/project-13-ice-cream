@@ -153,11 +153,7 @@
 
 /* спрайт-кнопка закрытия мобильного меню */
 .menu__close-menu {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  position: fixed;
   fill: #444;
   cursor: pointer;
 }
