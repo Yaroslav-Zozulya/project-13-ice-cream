@@ -114,8 +114,7 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 1.86;
-
-  color: var(--brand-color);
+  color: var(--dark-text-color);
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -127,7 +126,13 @@
 }
 
 .footer__tel-feature {
-  color: var(--dark-text-color);
+  color: var(--brand-color);
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--dark-btn-hover);
+  }
 }
 
 .footer__copyright-box {

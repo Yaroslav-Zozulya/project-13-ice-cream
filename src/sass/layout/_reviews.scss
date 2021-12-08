@@ -1,38 +1,82 @@
+.reviews {
+  padding-bottom: 86px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 30px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 35px;
+  }
+}
+
 .reviews__photo {
   margin: 0 auto 29px;
   width: 85px;
   height: 85px;
   border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
-.reviews__text {
+
+.reviews__text--wrapper {
+  z-index: 0;
+  display: block;
   padding: 43px 66px 26px 57px;
   margin-bottom: 30px;
+  background-color: var(--slider--text-background-color);
+  @media screen and(min-width:768px) {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 24px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-bottom: 15px;
+  }
+}
+
+.reviews__text {
   position: relative;
+  z-index: 2;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
   color: var(--dark-text-color);
-  // background: repeating-linear-gradient(
-  //   180deg,
-  //   #e1e1e1 0,
-  //   transparent 1px,
-  //   transparent 30px,
-  //   #e1e1e1 0,
-  //   #e1e1e1 31px
-  // );
-  // background-position: center bottom 3px;
+  background: repeating-linear-gradient(
+    180deg,
+    var(--gradient-line) 0,
+    transparent 1px,
+    transparent 30px,
+    var(--gradient-line) 0,
+    var(--gradient-line) 31px
+  );
+  background-position: center bottom 3px;
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    width: 450px;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 820px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 
 .reviews__text::before {
+  position: absolute;
+  top: -15px;
+  left: 4px;
+  z-index: -1;
   width: 54px;
   height: 40px;
   display: block;
-  z-index: -1;
   content: '';
-  position: absolute;
-  top: 28px;
-  left: 61px;
   background: url(../images/quotes.svg) no-repeat;
 }
 
@@ -73,10 +117,14 @@
   line-height: 1.86;
   text-align: center;
   color: var(--dark-text-color);
-}
-
-.swiper-wrapper {
-  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.85;
+  }
 }
 
 .reviews__pagination {

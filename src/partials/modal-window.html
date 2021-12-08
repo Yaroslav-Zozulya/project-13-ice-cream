@@ -1,82 +1,54 @@
-
 <div class="modal-order modal" data-modal="3">
+  <button class="modal-window__close-btn">
+      <svg class="close-modal js-modal-close modal-window__close">
+        <use href="../src/images/icons.svg#icon-close"></use>
+      </svg>
+  </button>
 
-        <svg class="menu__close-menu  js-modal-close">
-            <use href="../src/images/icons.svg#icon-close"></use>
-        </svg>
-        <form>
-            <div class="modal-window__content">
-                <h2 class="modal-window__message">Please, input your data for order</h2>
+  <form>
+    <p class="modal-window__message">Please, input your data for order</p>
 
-                <div class="modal-window__form">
-                    <p class="modal-window__call">Choose ice-cream</p>
-                    <ul class="modal-window__icecreams">
-                        <li class="modal-window__icecream-item">
-                            
-                            <label class="modal-window__name-icecream">
-                                <input type="checkbox" name="ice" value="IceCream" checked>
-                            <img src="../src/images/products/product1-d.png" alt="">    
-                            </label>
-                            <p class="modal-window__price">35$</p>
-                        </li>
+    <label class="modal-window__call"
+      >Choose products
+      <select name="choose-products" class="modal-window__choose-products">
+        <option selected value="icecream" class="modal-window__item">Ice cream 5$</option>
+        <option value="icecoffee" class="modal-window__item">Ice coffee 7$</option>
+        <option value="milkshakes" class="modal-window__item">Milkshakes 6$</option>
+      </select>
+    </label>
 
-                        <li class="modal-window__icecream-item">
-                            
-                            <label class="modal-window__name-icecream">
-                                <input type="checkbox" name="ice" value="IceCream">
-                    <img src="../src/images/products/product1-d.png" alt="">
-                            </label>
-                            <p class="modal-window__price">35$</p>
-                        </li>
-            
-                        <li class="modal-window__icecream-item">
-                           
-                            <label class="modal-window__name-icecream">
-                                <input type="checkbox" name="ice" value="IceCream">
-                            <img src="../src/images/products/product1-d.png" alt="">
-                            </label>
-                            <p class="modal-window__price">35$</p>
-                        </li>   
-                    </ul>
-     
-                
-                </div>
+    <div class="modal-window__form">
+      <label class="modal-window__form-name" for="name">Name</label>
+      <input type="text" name="name" id="name" class="modal-window__input" placeholder="" />
+    </div>
 
-                <div class="modal-window__form">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="modal-window__input" placeholder="">
-                </div>
+    <div class="modal-window__form">
+      <label class="modal-window__form-name" for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" class="modal-window__input" />
+      <svg class="modal-window__input-icon" width="18" height="18">
+        <use href="./images/icons.svg#icon-phone"></use>
+      </svg>
+    </div>
 
-                <div class="modal-window__form">
-                    <label class="modal-window__forma-name" for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phone" class="modal-window__input">
-                </div>
-                <div class="modal-window__form">
-                    <label class="modal-window__forma-name" for="adress">Adress for delivery</label>
-                    <input type="text" name="adress" id="email" class="modal-window__input">
-                </div>
+    <div class="modal-window__form">
+      <label class="modal-window__form-name" for="adress">Adress for delivery</label>
+      <input type="text" name="adress" id="adress" class="modal-window__input" />
+      <svg class="modal-window__input-icon" width="18" height="18">
+        <use href="./images/icons.svg#icon-location"></use>
+      </svg>
+    </div>
 
+    <div class="modal-window__agreement">
+      <input type="checkbox" id="agree" class="modal-window__checkbox" />
+      <label for="agree" class="modal-window__agree">
+        Соглашаюсь с рассылкой и принимаю<span
+          ><a href="" class="modal-window__link"> Условия договора</a></span
+        >
+      </label>
+    </div>
 
-                
-
-                <div class="modal-window__agreement">
-
-                    <input type="checkbox" id="agree" class="modal-window__checkbox">
-                    <label for="agree" class="modal-window__agree">
-                        Соглашаюсь с рассылкой и принимаю<span><a href="" class="modal-window__link"> Условия
-                                договора</a></span>
-                    </label>
-                </div>
-
-                <button type="submit" class="menu__button-submit btn btn_light">
-                    Отправить заказ
-                </button>
-            </div>
-        </form>
+    <button type="submit" class="menu__button-submit btn btn_light">Отправить заказ</button>
+  </form>
 </div>
-
-
-
-
 
 <div class="backdrop js-overlay-modal"></div>
