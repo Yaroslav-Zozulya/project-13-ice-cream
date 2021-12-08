@@ -32,7 +32,7 @@
 
   /*  Установаем ширину окна  */
   width: 100%;
-  height: 80vh;
+  // height: 80vh;
   max-width: 500px;
 
   /*  Центрируем и задаем z-index */
@@ -57,8 +57,7 @@
   }
   @media (min-width: 768px) and(max-width:1280px) {
     width: 450px;
-    height: 450px;
-
+    height: 550px;
   }
   @media (min-width: 1280px) {
     width: 528px;
@@ -104,7 +103,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 @media screen and(max-width:480px) {
@@ -190,10 +189,13 @@
 }
 
 .modal-window__choose-products {
-  margin-top: 10px;
+  margin: 20px auto 0 auto;
+  width: 200px;
+  display: block;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.15;
+  text-align: center;
   color: var(--dark-text-color);
 
   border: 1px solid var(--light-text-color);
@@ -202,10 +204,6 @@
   &:hover,
   &:focus {
     cursor: pointer;
-  }
-
-  @media (min-width: 1280px) {
-    margin-top: 0;
   }
 }
 
