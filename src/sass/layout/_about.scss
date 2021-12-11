@@ -1,7 +1,7 @@
 .section-about {
   padding-top: 125px;
   background-color: var(--background-color);
-  background-image: url('../images/milk/milk-m.png');
+  // background-image: url('../images/milk/milk-m.png');
 
   background-position: 0% 93%;
 
@@ -14,8 +14,10 @@
     background-image: none;
   }
   @media screen and(min-width: 1280px) {
-    background-image: url('../images/milk/milk-d.png');
-    background-position: 50% 130%;
+    background-image: url('../images/milk/milk-left.png'), url('../images/milk/milk-right.png');
+    background-size: auto, auto;
+    background-position: left 305px, right 340px;
+    background-repeat: no-repeat, no-repeat;
     padding-top: 125px;
   }
 }
